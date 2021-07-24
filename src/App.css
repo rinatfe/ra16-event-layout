@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.CardView {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.ShopCard {
+    display: flex;
+    flex-direction: column; 
+    border: 1px solid;
+    margin: 5px;
+    width: 32.3%;
+}
+
+.crad-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.material-icons {
+    align-self: flex-end;
+    font-size: 36px;
+    margin-right: 2px;
+}
+
+.card-name, .card-color {
+    text-align: center;
+}
+
+
+.card-footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+button {
+    border: 2px solid red;
+    border-radius: 10px;
+    color: red;
+}
+
+.ShopItem {
+    display: flex;
+    list-style-type: none;
+    border: 1px solid;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item-img-Items {
+    height: 50px;
+    width: 55px;
+}
+
+.price-Item {
+    margin-right: 100px;
+}
+
+.ListView {
+    width: 99%;
+    margin-left: 10px;
+}
+
+.list-button {
+    margin-right: 5px;
+}
+
