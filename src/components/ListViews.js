@@ -1,6 +1,11 @@
 import {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class ListViews extends Component {
+    static propTypes = {
+        items:PropTypes.array
+    }
+
     render() {
         const {items} = this.props;
         return (

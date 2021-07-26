@@ -1,6 +1,10 @@
 import {Component} from 'react';
+import PropTypes from 'prop-types';
 
 class CardViews extends Component {
+    static propTypes = {
+        cards:PropTypes.array
+    }
     
     render() {
         const {cards} = this.props;

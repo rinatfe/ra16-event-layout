@@ -9,27 +9,27 @@ import ListViews from './ListViews';
 class Store extends Component {
     
     constructor(props) {
-        super(props)
+        super(props);
         this.onSwitch=this.onSwitch.bind(this);
     }
     state = {icon: 'view_list', list:<CardViews cards={products} />}
 
     onSwitch(evt) {
-        this.setState(()=> {
-            let arr = null
+        let icon = null;
+        let list = null;
             if(evt.target.innerText == "view_list") {
-                return { 
-                    icon: 'view_module',
-                    list: <ListViews items={products} />
-                } 
+                icon =  'view_module';
+                list = <ListViews items={products} />
+                
             } else {
-                return { 
-                    icon: 'view_list',
-                    list: <CardViews cards={products} />
-                } 
+                icon = 'view_list';
+                list = <CardViews cards={products} />
+                 
             }
-           
-        });
+        this.setState( { 
+                icon: icon,
+                list: list
+            });
     }
 
     render() {
